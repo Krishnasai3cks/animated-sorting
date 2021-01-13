@@ -5,21 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <canvas id="canvas" width="850" height="450"></canvas>
-    <select id="algorithms">
-        <option>quick sort</option>
-        <option>bubble sort</option> 
-        <option>selection sort</option> 
-        <option>insertion sort</option>
-    </select>
-    <select id="visualSpeed">
-        <option>slow</option>
-        <option>medium</option>
-        <option>fast</option>
-    </select>
+    <div>
+        <span>Algorithm</span>
+        <select id="algorithms">
+            <option>quick sort</option>
+            <option>bubble sort</option> 
+            <option>selection sort</option> 
+            <option>insertion sort</option>
+        </select>
+    </div>
+    <div>
+        <span>Speed</span>
+        <select id="visualSpeed">
+            <option>slow</option>
+            <option>medium</option>
+            <option>fast</option>
+        </select>
+    </div>
     <button id="sortbutton" onclick="sort()">sort</button>
     <button onclick="shuffle()">shuffle</button>
     <script src="script.js"></script>
